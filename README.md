@@ -102,9 +102,6 @@ result = rearrange(x, 'a b c -> (a b) c')
 result = rearrange(x, '... h w -> ... (h w)')
 ```
 
-### Terminal Output
-![terminal output](images/image.png)
-
 ## Testing
 The implementation includes comprehensive tests covering:
 
@@ -140,11 +137,8 @@ The implementation includes comprehensive tests covering:
    - int64
    - boolean
 
-### Test Output Usage Examples
-![usage1](images/image-1.png)
-![usage2](images/image-2.png)
-![usage3](images/image-3.png)
-![usage4](images/image-4.png)
+### Terminal Output
+![terminal output](images/image.png)
 
 ## Implementation Details
 
@@ -175,7 +169,11 @@ The implementation includes 25 comprehensive examples demonstrating various feat
 6. Performance tests
 7. Data type preservation
 
-#### These 25 examples are displayed in the images above 
+### These 25 examples are displayed in the images below
+![usage1](images/image-1.png)
+![usage2](images/image-2.png)
+![usage3](images/image-3.png)
+![usage4](images/image-4.png)
 
 ## Performance Considerations I made while implementing the function
 - Pattern parsing is cached using LRU cache
