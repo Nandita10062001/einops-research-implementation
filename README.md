@@ -1,7 +1,7 @@
 # Einops Modified Implementation
 
 ## Overview
-This project implements a modified version of the einops tensor manipulation library, focusing on numpy array operations. The implementation provides a flexible way to manipulate tensor dimensions using a simple string-based syntax inspired by Einstein notation.
+In this project, I have implemented a modified version of the einops tensor manipulation library, focusing on numpy array operations. The implementation provides a flexible way to manipulate tensor dimensions using a simple string-based syntax inspired by Einstein notation.
 
 ## Table of Contents
 - [Implementation Approach](#implementation-approach)
@@ -12,8 +12,7 @@ This project implements a modified version of the einops tensor manipulation lib
 - [Testing](#testing)
 - [Implementation Details](#implementation-details)
 - [Examples](#examples)
-- [Performance Considerations](#performance-considerations)
-- [Known Limitations](#known-limitations)
+- [Performance Considerations](#performance-considerations-i-made-while-implementing-the-function)
 - [Future Improvements](#future-improvements)
 
 ## Implementation Approach
@@ -176,20 +175,14 @@ The implementation includes 25 comprehensive examples demonstrating various feat
 6. Performance tests
 7. Data type preservation
 
-### Example Output
-[Example Output Screenshots]
+#### These 25 examples are displayed in the images above 
 
-## Performance Considerations
+## Performance Considerations I made while implementing the function
 - Pattern parsing is cached using LRU cache
 - Memory usage is estimated before operations
 - Intermediate tensor operations are minimized
 - Large tensor operations are protected against OOM
 
-## Known Limitations
-1. Maximum memory usage is set to 100MB for testing
-2. Nested parentheses are not supported
-3. Limited to numpy arrays
-4. Single ellipsis per pattern
 
 ## Future Improvements
 1. Support for nested parentheses
@@ -203,6 +196,4 @@ The implementation includes 25 comprehensive examples demonstrating various feat
 ## Author
 Nandita Nandakumar,
 Machine Learning Engineer, Atmos
-
-
 ---
