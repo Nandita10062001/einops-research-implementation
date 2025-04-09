@@ -25,7 +25,9 @@ I approached this implementation with a focus on readability, maintainability, a
 4. **Testing**: Developed comprehensive test suite covering basic operations to edge cases
 
 ### Implementation Flowchart
-[Implementation Flowchart]
+#### Visual Representation
+![flowchart](images/flowchart.png)
+
 ```
 Input Pattern String
        ↓
@@ -102,7 +104,7 @@ result = rearrange(x, '... h w -> ... (h w)')
 ```
 
 ### Terminal Output
-![terminal output](image.png)
+![terminal output](images/image.png)
 
 ## Testing
 The implementation includes comprehensive tests covering:
@@ -140,10 +142,10 @@ The implementation includes comprehensive tests covering:
    - boolean
 
 ### Test Output Usage Examples
-![usage1](image-1.png)
-![usage2](image-2.png)
-![usage3](image-3.png)
-![usage4](image-4.png)
+![usage1](images/image-1.png)
+![usage2](images/image-2.png)
+![usage3](images/image-3.png)
+![usage4](images/image-4.png)
 
 ## Implementation Details
 
