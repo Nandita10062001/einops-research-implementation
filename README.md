@@ -1,6 +1,11 @@
 # Einops Modified Implementation
 
-## Overview
+[![Python Version](https://img.shields.io/badge/python-3.7%2B-blue.svg)](https://www.python.org/downloads/)
+[![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=flat&logo=numpy&logoColor=white)](https://numpy.org/)
+[![Code Style: Black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![Tests](https://img.shields.io/badge/tests-passing-brightgreen.svg)](https://github.com/Nandita10062001/einops-research-implementation/tree/master/test_einops_modified.py)
+
+# Overview
 In this project, I have implemented a modified version of the einops tensor manipulation library, focusing on numpy array operations. The implementation provides a flexible way to manipulate tensor dimensions using a simple string-based syntax inspired by Einstein notation.
 
 ## Table of Contents
@@ -79,7 +84,41 @@ class DimensionError(EinopsError): pass
 - Data type preservation
 
 ## Installation
-This implementation is provided as a Google Colab notebook. To use it:
+## 1. Quick Start (for utilizing the individual files instead of notebook)
+
+### Installation
+```bash
+# Clone the repository
+git clone https://github.com/Nandita10062001/einops-research-implementation.git
+cd einops-research-implementation
+cd initial_implementation
+
+# Install dependencies
+pip install numpy
+```
+
+### Basic Usage
+```python
+import numpy as np
+from einops_modified import rearrange
+
+# Basic transpose operation
+x = np.random.rand(3, 4)
+result = rearrange(x, 'h w -> w h')
+
+# Split an axis
+x = np.random.rand(12, 10)
+result = rearrange(x, '(h w) c -> h w c', h=3)
+
+# Merge axes
+x = np.random.rand(3, 4, 5)
+result = rearrange(x, 'a b c -> (a b) c')
+
+# Handle batch dimensions
+x = np.random.rand(2, 3, 4, 5)
+result = rearrange(x, '... h w -> ... (h w)')
+```
+## 2. This implementation is also provided as a Google Colab notebook. To use it:
 
 1. Open the notebook in Google Colab
 2. Run the implementation cell
@@ -190,8 +229,16 @@ The implementation includes 25 comprehensive examples demonstrating various feat
 5. Integration with other array libraries
 
 
+## Citation
+If you use this implementation in your research or project, please cite:
 
-## Author
-Nandita Nandakumar,
-Machine Learning Engineer, Atmos
----
+```bibtex
+@software{nandakumar2025einops,
+  author       = {Nandakumar, Nandita},
+  title        = {Einops Modified Implementation: Enhanced Tensor Manipulation Library},
+  year         = {2025},
+  publisher    = {GitHub},
+  url          = {https://github.com/Nandita10062001/einops-research-implementation},
+  description  = {A modified implementation of einops with enhanced memory management and error handling}
+}
+```
