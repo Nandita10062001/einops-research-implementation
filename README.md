@@ -102,7 +102,7 @@ result = rearrange(x, '... h w -> ... (h w)')
 ```
 
 ### Terminal Output
-![Terminal Output](test.png)
+![terminal output](image.png)
 
 ## Testing
 The implementation includes comprehensive tests covering:
@@ -140,10 +140,10 @@ The implementation includes comprehensive tests covering:
    - boolean
 
 ### Test Output Usage Examples
-![Usage Output](usage1.png)
-![Usage Output](usage2.png)
-![Usage Output](usage3.png)
-![Usage Output](usage4.png)
+![usage1](image-1.png)
+![usage2](image-2.png)
+![usage3](image-3.png)
+![usage4](image-4.png)
 
 ## Implementation Details
 
