@@ -32,25 +32,6 @@ I approached this implementation with a focus on readability, maintainability, a
 #### Visual Representation
 ![flowchart](images/flowchart.png)
 
-```
-Input Pattern String
-       ↓
-Pattern Parsing (LRU Cached)
-       ↓
-Validate Input Shape
-       ↓
-Memory Usage Check
-       ↓
-Apply Operations:
-  ├→ Basic Transpose
-  ├→ Split Axes
-  ├→ Merge Axes
-  ├→ Handle Ellipsis
-  └→ Repeat Axes
-       ↓
-Return Result
-```
-
 ## Design Decisions
 
 ### 1. Pattern String Format
