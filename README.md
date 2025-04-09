@@ -86,7 +86,7 @@ This implementation is provided as a Google Colab notebook. To use it:
 
 ## Usage
 
-### Basic Operations
+### Basic Operations - You can play around with all 25 examples in the Google Colab Notebook!
 ```python
 # Transpose
 result = rearrange(x, 'h w -> w h')
@@ -101,8 +101,8 @@ result = rearrange(x, 'a b c -> (a b) c')
 result = rearrange(x, '... h w -> ... (h w)')
 ```
 
-### Terminal Output Examples
-[Terminal Output Screenshots]
+### Terminal Output
+![Terminal Output](test.png)
 
 ## Testing
 The implementation includes comprehensive tests covering:
@@ -139,8 +139,11 @@ The implementation includes comprehensive tests covering:
    - int64
    - boolean
 
-### Test Output Examples
-[Test Output Screenshots]
+### Test Output Usage Examples
+![Usage Output](usage1.png)
+![Usage Output](usage2.png)
+![Usage Output](usage3.png)
+![Usage Output](usage4.png)
 
 ## Implementation Details
 
